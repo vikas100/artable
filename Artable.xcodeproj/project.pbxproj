@@ -12,6 +12,11 @@
 		CE73013222075CD800C737F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE73013022075CD800C737F3 /* Main.storyboard */; };
 		CE73013422075CD800C737F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE73013322075CD800C737F3 /* Assets.xcassets */; };
 		CE73013722075CD800C737F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE73013522075CD800C737F3 /* LaunchScreen.storyboard */; };
+		CE73014522075E0600C737F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73014422075E0600C737F3 /* AppDelegate.swift */; };
+		CE73014722075E0600C737F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE73014622075E0600C737F3 /* ViewController.swift */; };
+		CE73014A22075E0600C737F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE73014822075E0600C737F3 /* Main.storyboard */; };
+		CE73014F22075E0700C737F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE73014D22075E0700C737F3 /* LaunchScreen.storyboard */; };
+		CE73015522075E6100C737F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE73013322075CD800C737F3 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +27,23 @@
 		CE73013322075CD800C737F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE73013622075CD800C737F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE73013822075CD800C737F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE73014222075E0600C737F3 /* ArtableAdmin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtableAdmin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE73014422075E0600C737F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE73014622075E0600C737F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE73014922075E0600C737F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE73014E22075E0700C737F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE73015022075E0700C737F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CE73012622075CD700C737F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE73013F22075E0600C737F3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,7 +56,9 @@
 		CE73012022075CD700C737F3 = {
 			isa = PBXGroup;
 			children = (
+				CE73015422075E3F00C737F3 /* Shared */,
 				CE73012B22075CD800C737F3 /* Artable */,
+				CE73014322075E0600C737F3 /* ArtableAdmin */,
 				CE73012A22075CD800C737F3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				CE73012922075CD800C737F3 /* Artable.app */,
+				CE73014222075E0600C737F3 /* ArtableAdmin.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,11 +78,30 @@
 				CE73012C22075CD800C737F3 /* AppDelegate.swift */,
 				CE73012E22075CD800C737F3 /* ViewController.swift */,
 				CE73013022075CD800C737F3 /* Main.storyboard */,
-				CE73013322075CD800C737F3 /* Assets.xcassets */,
 				CE73013522075CD800C737F3 /* LaunchScreen.storyboard */,
 				CE73013822075CD800C737F3 /* Info.plist */,
 			);
 			path = Artable;
+			sourceTree = "<group>";
+		};
+		CE73014322075E0600C737F3 /* ArtableAdmin */ = {
+			isa = PBXGroup;
+			children = (
+				CE73014422075E0600C737F3 /* AppDelegate.swift */,
+				CE73014622075E0600C737F3 /* ViewController.swift */,
+				CE73014822075E0600C737F3 /* Main.storyboard */,
+				CE73014D22075E0700C737F3 /* LaunchScreen.storyboard */,
+				CE73015022075E0700C737F3 /* Info.plist */,
+			);
+			path = ArtableAdmin;
+			sourceTree = "<group>";
+		};
+		CE73015422075E3F00C737F3 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				CE73013322075CD800C737F3 /* Assets.xcassets */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +124,23 @@
 			productReference = CE73012922075CD800C737F3 /* Artable.app */;
 			productType = "com.apple.product-type.application";
 		};
+		CE73014122075E0600C737F3 /* ArtableAdmin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE73015122075E0700C737F3 /* Build configuration list for PBXNativeTarget "ArtableAdmin" */;
+			buildPhases = (
+				CE73013E22075E0600C737F3 /* Sources */,
+				CE73013F22075E0600C737F3 /* Frameworks */,
+				CE73014022075E0600C737F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArtableAdmin;
+			productName = ArtableAdmin;
+			productReference = CE73014222075E0600C737F3 /* ArtableAdmin.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -95,6 +152,9 @@
 				ORGANIZATIONNAME = "Krishna Torrence";
 				TargetAttributes = {
 					CE73012822075CD700C737F3 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					CE73014122075E0600C737F3 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -113,6 +173,7 @@
 			projectRoot = "";
 			targets = (
 				CE73012822075CD700C737F3 /* Artable */,
+				CE73014122075E0600C737F3 /* ArtableAdmin */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +189,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE73014022075E0600C737F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE73014F22075E0700C737F3 /* LaunchScreen.storyboard in Resources */,
+				CE73015522075E6100C737F3 /* Assets.xcassets in Resources */,
+				CE73014A22075E0600C737F3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,6 +208,15 @@
 			files = (
 				CE73012F22075CD800C737F3 /* ViewController.swift in Sources */,
 				CE73012D22075CD800C737F3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE73013E22075E0600C737F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE73014722075E0600C737F3 /* ViewController.swift in Sources */,
+				CE73014522075E0600C737F3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +235,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				CE73013622075CD800C737F3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CE73014822075E0600C737F3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE73014922075E0600C737F3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE73014D22075E0700C737F3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE73014E22075E0700C737F3 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -314,6 +410,42 @@
 			};
 			name = Release;
 		};
+		CE73015222075E0700C737F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BZGPFH96K2;
+				INFOPLIST_FILE = ArtableAdmin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KrishnaTorrence.ArtableAdmin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE73015322075E0700C737F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BZGPFH96K2;
+				INFOPLIST_FILE = ArtableAdmin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KrishnaTorrence.ArtableAdmin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -331,6 +463,15 @@
 			buildConfigurations = (
 				CE73013C22075CD800C737F3 /* Debug */,
 				CE73013D22075CD800C737F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE73015122075E0700C737F3 /* Build configuration list for PBXNativeTarget "ArtableAdmin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE73015222075E0700C737F3 /* Debug */,
+				CE73015322075E0700C737F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
